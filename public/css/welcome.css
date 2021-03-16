@@ -1,0 +1,23 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #071826;
+    color: #fff;
+}
+
+p {
+    margin-top: 1em;
+}
+
+#footer {
+    text-align: center;
+    background-color: #0e3e5b;
+    padding: 2.5rem 0;
+}
+
+.fab {
+    color: white;
+}
+
+.fab:hover {
+    color: #ccc;
+}
