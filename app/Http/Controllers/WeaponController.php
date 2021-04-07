@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class WeaponController extends Controller
 {
-    public function index(Request $request) {
+    public function apiIndex(Request $request) {
         $weapons = Weapon::orderBy('name')->get();
         
         return WeaponResource::collection($weapons);

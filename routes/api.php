@@ -21,5 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/legends', [LegendController::class, 'index']);
-Route::get('/weapons', [WeaponController::class, 'index']);
+Route::get('/legends', [LegendController::class, 'apiIndex']);
+Route::get('/weapons', [WeaponController::class, 'apiIndex']);

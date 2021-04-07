@@ -3,12 +3,51 @@
 namespace App\Http\Controllers;
 
 use App\Models\Legend;
+use App\Models\Weapon;
 use App\Http\Resources\LegendResource;
 use Illuminate\Http\Request;
 
 class LegendController extends Controller
 {
-    public function index(Request $request) {
+    public function index() {
+        $legends = Legend::orderBy('name')->get();
+
+        $parametros = [
+            'legends' => $legends
+        ];
+
+        return view('legend.index', $parametros);
+    }
+
+    public function edit(Legend $legend) {
+        $weapons = Weapon::orderBy('name')->get();
+
+        $parametros = [
+            'legend' => $legend,
+            'weapons' => $weapons
+        ];
+
+        return view('legend.edit', $parametros);
+    }
+
+    public function update(Request $request, Legend $legend) {
+        $legend->update([
+            'name' => $request->name,
+            'gender' => $request->gender,
+            'first_weapon_id' => $request->first_weapon_id,
+            'second_weapon_id' => $request->second_weapon_id,
+            'strength' => $request->strength,
+            'dexterity' => $request->dexterity,
+            'defense' => $request->defense,
+            'speed' => $request->speed,
+            'price' => $request->price,
+            'new' => $request->new
+        ]);
+
+        return redirect()->route('legends.index')->with('success', 'Legend atualizado com sucesso!');
+    }
+
+    public function apiIndex(Request $request) {
         $legends = Legend::get();
         $legends = $this->filtrarDados($legends, $request->all());
         

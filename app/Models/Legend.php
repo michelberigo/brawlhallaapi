@@ -10,6 +10,19 @@ class Legend extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'gender',
+        'first_weapon_id',
+        'second_weapon_id',
+        'strength',
+        'dexterity',
+        'defense',
+        'speed',
+        'price',
+        'new'
+    ];
+
     public function firstWeapon()
     {
         return $this->belongsTo(Weapon::class, 'first_weapon_id');
