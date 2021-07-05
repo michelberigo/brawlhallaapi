@@ -2,9 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\LegendController;
-use App\Http\Controllers\WeaponController;
+use App\Http\Controllers\Api\DashboardController;
+use App\Http\Controllers\Api\LegendController;
+use App\Http\Controllers\Api\WeaponController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +17,10 @@ use App\Http\Controllers\WeaponController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/legends', [LegendController::class, 'apiIndex']);
-Route::get('/weapons', [WeaponController::class, 'apiIndex']);
+Route::get('dashboard', [DashboardController::class, 'index']);
+Route::get('legends', [LegendController::class, 'index']);
+Route::get('weapons', [WeaponController::class, 'index']);

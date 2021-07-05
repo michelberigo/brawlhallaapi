@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LegendController;
+use App\Http\Controllers\WeaponController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,11 +22,10 @@ Route::get('/', function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::prefix('dashboard')->group(function () {
-        Route::get('/', function () {
-            return view('dashboard');
-        })->name('dashboard');
+        Route::get('/', [DashboardController::class, 'index']);
 
         Route::resource('legends', LegendController::class);
+        Route::resource('weapons', WeaponController::class);
     });
 });
 

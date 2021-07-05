@@ -22,4 +22,8 @@ class Weapon extends Model
     const WEAPON_CANNON = 11;
     const WEAPON_ORB = 12;
     const WEAPON_GREATSWORD = 13;
+
+    protected $fillable = [
+        'name'
+    ];
 }
