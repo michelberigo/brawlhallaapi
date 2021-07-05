@@ -8,11 +8,6 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Scripts -->
-        <script src="/js/app.js"></script>
-        <script src="/js/welcome.js"></script>
-
         <link href="/css/app.css" rel="stylesheet">
         <link href="/css/welcome.css" rel="stylesheet">
     </head>
@@ -175,5 +170,9 @@
                 <a href="https://github.com/michelberigo" target="_blank" rel="noopener"><i class="fab fa-github fa-3x fa-fw"></i></a>
             </div>
         </footer>
+
+        <!-- Scripts -->
+        <script src="/js/app.js"></script>
+        <script src="/js/welcome.js"></script>
     </body>
 </html>
