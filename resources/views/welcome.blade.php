@@ -20,13 +20,13 @@
 
     <body>
         <main role="main" class="container-fluid mb-5">
-            <div id="cabecalho" class="text-center mt-5 mb-5">
+            <div id="cabecalho" class="text-center mt-5">
                 <h1>Brawlhalla API - Guide</h1>
                 <p class="lead">Current Version: 1.0 | 13/03/2021</p>
                 <p class="lead">Unofficial</p>
             </div>
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-sm-5 offset-sm-1">
                     <div id="changelog">
                         <p class="lead"><strong>API Changelog (v1)</strong></p>
@@ -34,14 +34,13 @@
                         <ul>
                             <li>Added Legends endpoint.</li>
                             <li>Added Weapons endpoint.</li>
+                            <li>Added Metadata endpoint.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <br>
-
-            <div id="endpoint-legend">
+            <div id="endpoint-legend" class="mb-5">
                 <div class="row">
                     <div class="col-sm-6 offset-sm-1">
                         <h3>Get Legend Information</h3>
@@ -95,9 +94,7 @@
                 </div>
             </div>
 
-            <br>
-
-            <div class="row" class="mb-5">
+            <div class="row mb-5">
                 <div class="col-sm-6 offset-sm-1">
                     <h3>Example Usage</h3>
                     <p>The following is a list of examples you can do using the possible endpoint parameters shown above.</p>
@@ -119,9 +116,7 @@
                 </div>
             </div>
 
-            <br>
-
-            <div class="row" class="mb-5">
+            <div class="row mb-5">
                 <div class="col-sm-6 offset-sm-1">
                     <h3>Endpoint Information</h3>
                     <p>Parameter "weapons" available values:</p>
@@ -138,14 +133,37 @@
                 </div>
             </div>
 
-            <br>
-
-            <div class="row" class="mb-5">
+            <div class="row mb-5">
                 <div class="col-sm-6 offset-sm-1">
                     <h3>All Weapons</h3>
-                    <p>The Weapons endpoint can be found at <code>https://brawlhallaapi.test/api/weapons</code>.</p>
+                    <p>The Weapons endpoint can be found at <code id="dominio-atual-weapon"></code>.</p>
                     <p>This simply returns all of the current Brawlhalla weapons we have stored in the database.</p>
                     <p>This contains the following response info: ID and Name.</p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                    <div class="col-sm-6 offset-sm-1">
+                    <h3>Get Metadata Information</h3>
+                    <p>The Metadata endpoint can be found at <code id="dominio-atual-metadata"></code>.</p>
+                    <p><strong>Response Information:</strong></p>
+
+                    <ul>
+                        <li>all_legends - Count of all legends.</li>
+                        <li>all_weapons - Count of all weapons.</li>
+                        <li>all_male_legends - Count of all male legends.</li>
+                        <li>all_female_legends - Count of all female legends.</li>
+
+                        <li>highest_strength_legends - All legends with highest strength status.</li>
+                        <li>highest_dexterity_legends - All legends with highest dexterity status.</li>
+                        <li>highest_defense_legends - All legends with highest defense status. </li>
+                        <li>highest_speed_legends - All legends with highest speed status.</li>
+
+                        <li>lowest_strength_legends - All legends with lowest strength status.</li>
+                        <li>lowest_dexterity_legends - All legends with lowest dexterity status.</li>
+                        <li>lowest_defense_legends - All legends with lowest defense status.</li>
+                        <li>lowest_speed_legends - All legends with lowest speed status.</li>
+                    </ul>
                 </div>
             </div>
         </main>

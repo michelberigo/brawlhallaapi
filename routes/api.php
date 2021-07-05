@@ -21,6 +21,6 @@ Route::middleware('auth:api')->get('user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('dashboard', [DashboardController::class, 'index']);
+Route::get('metadata', [DashboardController::class, 'index']);
 Route::get('legends', [LegendController::class, 'index']);
 Route::get('weapons', [WeaponController::class, 'index']);
