@@ -10,8 +10,10 @@ use Illuminate\Http\Request;
 class LegendController extends Controller
 {
     public function index(Request $request) {
+        $dados = $request->all();
+
         $legends = Legend::orderBy('name')->get();
-        $legends = $this->filtrarDados($legends, $request->all());
+        $legends = $this->filtrarDados($legends, $dados);
         
         return LegendResource::collection($legends);
     }

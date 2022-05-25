@@ -17,6 +17,7 @@ class LegendsSeeder extends Seeder
     {
         $legends = [
             ['name' => 'Ada', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_BLASTERS, 'second_weapon_id' => Weapon::WEAPON_SPEAR, 'strength' => 6, 'dexterity' => 6, 'defense' => 3, 'speed' => 5, 'price' => 3900, 'new' => false],
+            ['name' => 'Arcadia', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_SPEAR, 'second_weapon_id' => Weapon::WEAPON_GREATSWORD, 'strength' => 7, 'dexterity' => 7, 'defense' => 4, 'speed' => 4, 'price' => 5400, 'new' => true],
             ['name' => 'Artemis', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_ROCKET_LANCE, 'second_weapon_id' => Weapon::WEAPON_SCYTHE, 'strength' => 5, 'dexterity' => 5, 'defense' => 4, 'speed' => 8, 'price' => 5400, 'new' => false],
             ['name' => 'Asuri', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_KATARS, 'second_weapon_id' => Weapon::WEAPON_SWORD, 'strength' => 4, 'dexterity' => 7, 'defense' => 5, 'speed' => 6, 'price' => 3900, 'new' => false],
             ['name' => 'Azoth', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_BOW, 'second_weapon_id' => Weapon::WEAPON_AXE, 'strength' => 7, 'dexterity' => 5, 'defense' => 6, 'speed' => 4, 'price' => 5400, 'new' => false],
@@ -45,6 +46,7 @@ class LegendsSeeder extends Seeder
             ['name' => 'Mako', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_KATARS, 'second_weapon_id' => Weapon::WEAPON_GREATSWORD, 'strength' => 6, 'dexterity' => 4, 'defense' => 4, 'speed' => 8, 'price' => 5400, 'new' => false],
             ['name' => 'Mirage', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_SCYTHE, 'second_weapon_id' => Weapon::WEAPON_SPEAR, 'strength' => 7, 'dexterity' => 6, 'defense' => 4, 'speed' => 5, 'price' => 3900, 'new' => false],
             ['name' => 'Mordex', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_SCYTHE, 'second_weapon_id' => Weapon::WEAPON_GAUNTLETS, 'strength' => 6, 'dexterity' => 4, 'defense' => 5, 'speed' => 7, 'price' => 5400, 'new' => false],
+            ['name' => 'Munin', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_BOW, 'second_weapon_id' => Weapon::WEAPON_SCYTHE, 'strength' => 5, 'dexterity' => 6, 'defense' => 4, 'speed' => 7, 'price' => 5400, 'new' => false],
             ['name' => 'Queen Nai', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_SPEAR, 'second_weapon_id' => Weapon::WEAPON_KATARS, 'strength' => 7, 'dexterity' => 4, 'defense' => 8, 'speed' => 3, 'price' => 2300, 'new' => false],
             ['name' => 'Nix', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_SCYTHE, 'second_weapon_id' => Weapon::WEAPON_BLASTERS, 'strength' => 4, 'dexterity' => 5, 'defense' => 7, 'speed' => 6, 'price' => 5400, 'new' => false],
             ['name' => 'Onyx', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_GAUNTLETS, 'second_weapon_id' => Weapon::WEAPON_CANNON, 'strength' => 5, 'dexterity' => 4, 'defense' => 8, 'speed' => 5, 'price' => 5400, 'new' => false],
@@ -52,9 +54,7 @@ class LegendsSeeder extends Seeder
             ['name' => 'Petra', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_GAUNTLETS, 'second_weapon_id' => Weapon::WEAPON_ORB, 'strength' => 8, 'dexterity' => 4, 'defense' => 4, 'speed' => 6, 'price' => 5400, 'new' => false],
             ['name' => 'Ragnir', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_KATARS, 'second_weapon_id' => Weapon::WEAPON_AXE, 'strength' => 5, 'dexterity' => 6, 'defense' => 6, 'speed' => 5, 'price' => 5400, 'new' => false],
             ['name' => 'Rayman', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_GAUNTLETS, 'second_weapon_id' => Weapon::WEAPON_AXE, 'strength' => 5, 'dexterity' => 5, 'defense' => 6, 'speed' => 6, 'price' => 5400, 'new' => false],
-            
-            ['name' => 'Reno', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_BLASTERS, 'second_weapon_id' => Weapon::WEAPON_ORB, 'strength' => 4, 'dexterity' => 7, 'defense' => 6, 'speed' => 5, 'price' => 5400, 'new' => true],
-            
+            ['name' => 'Reno', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_BLASTERS, 'second_weapon_id' => Weapon::WEAPON_ORB, 'strength' => 4, 'dexterity' => 7, 'defense' => 6, 'speed' => 5, 'price' => 5400, 'new' => false],
             ['name' => 'Sir Roland', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_ROCKET_LANCE, 'second_weapon_id' => Weapon::WEAPON_SWORD, 'strength' => 5, 'dexterity' => 4, 'defense' => 8, 'speed' => 3, 'price' => 2300, 'new' => false],
             ['name' => 'Scarlet', 'gender' => 'Female', 'first_weapon_id' => Weapon::WEAPON_GRAPPLE_HAMMER, 'second_weapon_id' => Weapon::WEAPON_ROCKET_LANCE, 'strength' => 8, 'dexterity' => 5, 'defense' => 5, 'speed' => 4, 'price' => 3900, 'new' => false],
             ['name' => 'Sentinel', 'gender' => 'Male', 'first_weapon_id' => Weapon::WEAPON_GRAPPLE_HAMMER, 'second_weapon_id' => Weapon::WEAPON_KATARS, 'strength' => 5, 'dexterity' => 3, 'defense' => 7, 'speed' => 5, 'price' => 2300, 'new' => false],

@@ -1,8 +1,8 @@
 
-    $('#dominio-atual-legend').text('https://' + window.location.hostname + '/api/legends');
-    $('#dominio-atual-weapon').text('https://' + window.location.hostname + '/api/weapons');
-    $('#dominio-atual-metadata').text('https://' + window.location.hostname + '/api/metadata');
-    $('#dominio-atual-legend-json').text('https://' + window.location.hostname + '/api/legends?name=mirage');
+    $('#dominio-atual-legend').text(window.location.origin + '/api/legends');
+    $('#dominio-atual-weapon').text(window.location.origin + '/api/weapons');
+    $('#dominio-atual-metadata').text(window.location.origin + '/api/metadata');
+    $('#dominio-atual-legend-json').text(window.location.origin + '/api/legends?name=mirage');
 
     $.ajax({
         url: "/api/legends?name=mirage",
